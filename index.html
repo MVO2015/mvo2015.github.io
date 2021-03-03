@@ -11,14 +11,27 @@
 
     <h2 style="text-align: center">Jsme národ schopný všeho! Defenestrace má u nás hlubokou tradici!</h2>
 
-    <div class="mx-auto" style="width: 200px">
-        <button type="button" class="btn btn-primary">Souhlasím</button>
+    <div class="container-md" style="margin-top: 30px">
+        <div class="mx-auto" style="width: 200px">
+            <button type="button"
+                    class="btn btn-lg btn-primary"
+                    data-bs-toggle="popover"
+                    data-bs-placement="bottom"
+                    title="A není to málo?"
+                    data-bs-content="Co můžeme udělat pro to, aby nám nevládla slabá vláda bez důvěry?">
+                Souhlasím
+            </button>
+        </div>
     </div>
 
 
 </div>
-
 <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script>
+    const popover = new bootstrap.Popover(document.querySelector('[data-bs-toggle="popover"]'), {
+        container: 'body'
+    })
+</script>
 </body>
 </html>
