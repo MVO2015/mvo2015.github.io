@@ -8,12 +8,13 @@
 </head>
 <body>
 <div class="container-md" style="margin-top: 70px">
-
-    <div style="text-align: center; font-size: 2rem;">
-        Jsme národ schopný všeho!<br>
-        Defenestrace má u nás hlubokou tradici!
-    </div>
-
+    <p class="display-6 text-center">
+        Člověk musí bojovat proti tomu zlu,
+        <br>na které právě stačí.
+        <br>
+        <br>
+        <em>Jan Palach</em>
+    </p>
     <div class="container-md" style="margin-top: 30px">
         <div class="mx-auto" style="width: 200px">
             <button type="button"
@@ -21,21 +22,18 @@
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     title="A není to málo?"
-                    data-bs-content="Co můžeme udělat pro to, aby nám nevládla slabá vláda bez důvěry s podporou
-                    komunistů a v čele s trestně stíhaným premiérem?">
+                    data-bs-content="Co můžeme udělat pro to, abychom takovému zlu kolem nás nedávali prostor?">
                 Souhlasím
             </button>
         </div>
     </div>
-
-
 </div>
 <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script>
     const popover = new bootstrap.Popover(document.querySelector('[data-bs-toggle="popover"]'), {
         container: 'body'
-    })
+    });
 </script>
 </body>
 </html>
